@@ -18,7 +18,16 @@
       .dice {
         text-align: center;
         height: 10rem;
-        background-color: aqua;
+        border: solid thick whitesmoke;
+      }
+      #left-div {
+        background-color: coral;
+      }
+      #right-div {
+        background-color: lime;
+      }
+      #middle-div {
+        background-color: rgb(224, 201, 107);
       }
     </style>
   </head>
@@ -26,17 +35,20 @@
     <h1 class="announcement"></h1>
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-12 col-md-4 dice">
+        <div id="left-div" class="col-12 col-md-4 dice">
           <h3 id="l-result"></h3>
           <button id="mz-blue" class="btn btn-primary">Roll!</button>
         </div>
-        <div class="col-12 col-md-4 dice">
+        <div id="middle-div" class="col-12 col-md-4 dice">
+          <h3>Result:</h3>
+          <h2 class="announcement"></h2>
+        </div>
+        <div id="right-div" class="col-12 col-md-4 dice">
           <h3 id="r-result"></h3>
           <button id="mz-red" class="btn btn-danger">Roll!</button>
         </div>
       </div>
     </div>
-    <h2 class="announcement"></h2>
     <!-- Scripts! -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
